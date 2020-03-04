@@ -1,0 +1,18 @@
+export function w $main(l %fmt) {
+@end
+@else
+  jnz %x, @endloop, @start
+@endloop
+  jmp @loop
+@cnt
+@loop
+  jnz %x, @cnt, @if
+@if
+  jnz %x, @while, @start
+@while
+  jnz %x, @while, @header
+@start
+  ret 1
+@hesder
+  ret 0
+}
